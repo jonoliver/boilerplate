@@ -1,1 +1,3 @@
-export default () => "Hello World!";
+import React from "react";
+
+export default ({ message }) => <p>{message}</p>;

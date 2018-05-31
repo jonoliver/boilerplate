@@ -1,5 +1,10 @@
-import Hello from '.';
+import React from 'react';
+import Main from '.';
+import renderer from 'react-test-renderer';
 
-test('Hello', () => {
-  expect(Hello()).toEqual('Hello World!');
+it('displays the message', () => {
+  const tree = renderer
+    .create(<Main message="Hello World!" />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });
