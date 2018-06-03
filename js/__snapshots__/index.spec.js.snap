@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`displays the message 1`] = `
+exports[`displays the message (snapshot) 1`] = `
 <p>
   Hello World!
 </p>
